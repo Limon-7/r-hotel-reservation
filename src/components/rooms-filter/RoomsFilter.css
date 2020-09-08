@@ -1,0 +1,72 @@
+.roomsFilter {
+  padding: 5rem 0;
+}
+.rooomsFilter__form {
+  width: 60vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(202px, 1fr));
+  grid-row-gap: 2rem;
+  grid-column-gap: 40px;
+}
+.roomsFilter__form-group {
+  text-transform: capitalize;
+}
+#price {
+  background: #685858;
+  border: solid 1px #fbfeff;
+  border-radius: 8px;
+  height: 7px;
+  outline: none;
+  /* -webkit-appearance: none; */
+}
+
+/* outer button remove
+ */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.roomsFilter__form-group > label {
+  display: block;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.3ch;
+}
+.roomsFilter__form-control {
+  width: 100%;
+  background: transparent;
+  font-size: 1rem;
+}
+.roomsFilter__size {
+  display: flex;
+}
+.roomsFilter__size--input {
+  width: 40%;
+  padding: 0.2rem;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  margin-right: 0.3rem;
+}
+.roomsFilter__extra > label {
+  display: inline-block;
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
+
+@media screen and (min-width: 776px) {
+  .rooomsFilter__form {
+    width: 70vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .rooomsFilter__form {
+    width: 95vw;
+    max-width: 1170px;
+  }
+}

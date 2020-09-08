@@ -1,0 +1,62 @@
+.room {
+  box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s linear;
+}
+.room:hover {
+  box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.room__image-container {
+  position: relative;
+}
+.room__image-container > img {
+  width: 100%;
+  display: block;
+  transition: all 0.3s linear;
+}
+.room__image-container:hover {
+  background: rgba(0, 0, 0, 0.8);
+  transition: all 0.3s all;
+}
+.room__image-container > img:hover {
+  opacity: 0.3;
+}
+.room__image-container:hover .room__price-top {
+  opacity: 0;
+}
+.room__image-container:hover .room__link {
+  transform: translate(-50%, -50%) scale(1);
+}
+.room__price-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 0.3rem 0.6rem 0.5rem;
+  border-bottom-right-radius: 1rem;
+  text-align: center;
+  font-size: 0.5rem;
+  transition: all 0.3s linear;
+}
+.room__price-top > h6 {
+  margin-bottom: 0px;
+  font-size: 0.9rem;
+  letter-spacing: 0.3ch;
+  font-weight: 300;
+}
+.room__link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: scale(0);
+  transition: all 0.3s linear;
+}
+
+.room__info {
+  background: #cfcfcf;
+  text-transform: capitalize;
+  padding: 0.5rem 0;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.3ch;
+}
