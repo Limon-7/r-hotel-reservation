@@ -8,14 +8,4 @@
 - context api
 - Hooks
 
-#### functionality:
-
-# TODO- Leran
-
-- Defaultprops: ClassName.defaultProps
-
-Hero.defaultProps = {
-hero: "defaultHero",
-};
-
-- proptypes
+[Live Link:](https://hotel-reservation-7.netlify.app/)
